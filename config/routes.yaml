@@ -1,0 +1,24 @@
+index:
+  path: /list
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\TestingController::index
+
+new:
+  path: /createUser
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\TestingController::new
+
+show:
+  path: /showUser/{id}
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\TestingController::show
+
+edit:
+  path: /editUser/{id}
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\TestingController::edit
+
+delete:
+  path: /deleteUser/{id}
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\TestingController::delete

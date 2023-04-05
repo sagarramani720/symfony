@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+ 
+{% block title %}User Record Display{% endblock %}
+ 
+{% block body %}
+    <div class="container">
+        <h2 class="text-center mt-5 mb-3">User Display</h2>
+        <div class="card">
+            <div class="card-header">
+                <a class="btn btn-outline-info float-right" href="{{ path('index') }}"> 
+                    Back
+                </a>
+            </div>
+            <div class="card-body">
+                <b class="text-muted">Name:</b>
+                <p>{{ testing.name }}</p>
+                <b class="text-muted">Email:</b>
+                <p>{{ testing.email }}</p>
+                <b class="text-muted">Phone:</b>
+                <p>{{ testing.phone }}</p>
+                <b class="text-muted">City:</b>
+                <p>{{ testing.city }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
